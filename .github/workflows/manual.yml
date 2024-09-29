@@ -4,9 +4,9 @@ workflow_dispatch
   input:
     greeting:
       type: string
-      description: 'Hello, who?'
-      required: true
       description: 'Hello'
+      required: true
+      description: 'A cheerful word'
 jobs:
   run:
     runs-on: ubuntu-latest
