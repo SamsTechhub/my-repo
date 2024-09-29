@@ -1,4 +1,4 @@
-name: Override Enviroment
+name: Variables
 on: push
 jobs:
     run:
