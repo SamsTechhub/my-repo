@@ -1,0 +1,11 @@
+name: Override Enviroment
+on: push
+env:
+    EXAMPLE: Defined by workflow level
+jobs:
+    run:
+        runs-on: ubuntu-latest
+        env:
+            EXAMPLE: Defined by job level
+        steps:
+            - run: echo "${{ env.EXAMPLE }}"
