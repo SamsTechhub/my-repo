@@ -11,4 +11,6 @@ jobs:
             - run: echo "${{ github.repository_id}}"
             - run: echo "${{ github.event_name}}"
             - run: echo "${{ github.actor}}"
-            - run: echo "${{ github.action}}"
+            - run: echo "${{ runner.name }}"
+            - run: echo "${{ runner.arch }}"
+            - run: echo "${{ runner.arch }}"
