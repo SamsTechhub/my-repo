@@ -1,0 +1,12 @@
+name: Enviroment variables
+on: push
+jobs:
+    run:
+        runs-on: ubuntu-latest
+        env:
+            Branch: main
+        steps:
+            - run: echo "${{ env.Branch }}"
+            - uses: actions/checkout@v4
+              with:
+                  ref: ${{ env.Branch }}
