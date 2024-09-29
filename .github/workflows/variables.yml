@@ -1,4 +1,4 @@
-name: Variables
+name: ariables
 on: push
 jobs:
     run:
